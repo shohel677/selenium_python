@@ -1,3 +1,5 @@
+import logging
+
 import pytest
 from selenium import webdriver
 
@@ -61,3 +63,20 @@ def pytest_addoption(parser):
     parser.addoption(
         "--password", action="store", default="secret_sauce", help="Environment url"
     )
+
+
+@pytest.fixture(scope="session", autouse=True)
+def setup_logging():
+    """Configure logging settings for the test session."""
+    logging.basicConfig(
+        level=logging.DEBUG,  # Change to DEBUG for detailed logs
+        format="%(asctime)s - %(levelname)s - %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+        filename="test_log.log",  # Log file name
+        filemode="w"  # Overwrite log file for each session
+    )
+    console = logging.StreamHandler()
+    console.setLevel(logging.DEBUG)
+    formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+    console.setFormatter(formatter)
+    logging.getLogger().addHandler(console)
