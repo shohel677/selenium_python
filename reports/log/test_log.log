@@ -1,0 +1,20 @@
+2025-03-17 01:24:24 - INFO - ##############################Test started: test_to_validate_login
+2025-03-17 01:26:08 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
+2025-03-17 01:26:08 - INFO - ##############################Test ended: test_to_validate_login
+2025-03-17 01:26:08 - INFO - 
+2025-03-17 01:26:11 - INFO - ##############################Test started: test_to_open_a_product
+2025-03-17 01:26:14 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
+2025-03-17 01:26:14 - INFO - Checking click ability of element: //div[text()='Sauce Labs Backpack']/parent::a
+2025-03-17 01:26:14 - INFO - ##############################Test ended: test_to_open_a_product
+2025-03-17 01:26:14 - INFO - 
+2025-03-17 01:26:17 - INFO - ##############################Test started: test_to_add_a_product_in_cart
+2025-03-17 01:26:20 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
+2025-03-17 01:26:20 - INFO - Checking click ability of element: //div[text()='Sauce Labs Backpack']/parent::a
+2025-03-17 01:26:20 - INFO - ##############################Test ended: test_to_add_a_product_in_cart
+2025-03-17 01:26:20 - INFO - 
+2025-03-17 01:26:22 - INFO - ##############################Test started: test_to_checkout_a_product
+2025-03-17 01:26:26 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
+2025-03-17 01:26:26 - INFO - Checking click ability of element: //div[text()='Sauce Labs Backpack']/parent::a
+2025-03-17 01:26:34 - INFO - Checking presence of element: //input[@placeholder='First Name']
+2025-03-17 01:26:35 - INFO - ##############################Test ended: test_to_checkout_a_product
+2025-03-17 01:26:35 - INFO - 

@@ -9,7 +9,6 @@ from pages.login_page import LoginPage
 @pytest.fixture(scope="function")
 def instance_driver(request):
     test_name = request.node.name  # Get the test method name
-    logging.info("")
     logging.info("##############################Test started: "+test_name)
     browser_name = request.config.getoption("browser_name")
 
@@ -77,7 +76,7 @@ def setup_logging():
     logger.setLevel(logging.DEBUG)  # Change to DEBUG for detailed logs
 
     # File handler
-    file_handler = logging.FileHandler("reports/log/test_log.log", mode="w")
+    file_handler = logging.FileHandler("../reports/log/test_log.log", mode="w")
     file_handler.setLevel(logging.INFO)
     file_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s", "%Y-%m-%d %H:%M:%S")
     file_handler.setFormatter(file_formatter)
