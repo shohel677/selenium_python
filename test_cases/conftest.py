@@ -11,12 +11,12 @@ def instance_driver(request):
     if "chrome" in browser_name:
         options = webdriver.ChromeOptions()
         if browser_name == "chromeheadless":
-            options.add_argument("--headless")  # Run Chrome in headless mode
+            options.add_argument("--headless")
             options.add_argument("--disable-gpu")
-            options.add_argument("--window-size=1920,1080")  # Optional: Set screen size
+            options.add_argument("--window-size=1920,1080")
             driver = webdriver.Chrome(options=options)
         else:
-            options.add_experimental_option("detach", True)  # Prevents browser from closing automatically
+            options.add_experimental_option("detach", True)
             driver = webdriver.Chrome(options=options)
     elif browser_name == "firefox":
         driver = webdriver.Firefox()
@@ -41,11 +41,11 @@ def setup(instance_driver, request):
     instance_driver.maximize_window()
     instance_driver.implicitly_wait(10)
     login = LoginPage(instance_driver)
-    (login.input_username(username).
-     input_password(password)
-     .click_submit())
+    login.input_username(username)
+    login.input_password(password)
+    login.click_submit()
 
-    yield instance_driver  # Keeps the driver alive for the test
+    yield instance_driver
 
 
 def pytest_addoption(parser):
