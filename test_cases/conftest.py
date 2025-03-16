@@ -8,6 +8,9 @@ from pages.login_page import LoginPage
 
 @pytest.fixture(scope="function")
 def instance_driver(request):
+    test_name = request.node.name  # Get the test method name
+    logging.info("")
+    logging.info("##############################Test started: "+test_name)
     browser_name = request.config.getoption("browser_name")
 
     if "chrome" in browser_name:
@@ -29,7 +32,9 @@ def instance_driver(request):
 
     yield driver
 
-    print("\nClosing the browser after test execution")
+    logging.info("##############################Test ended: "+test_name)
+    logging.info("")
+
     driver.quit()
 
 
@@ -68,15 +73,19 @@ def pytest_addoption(parser):
 @pytest.fixture(scope="session", autouse=True)
 def setup_logging():
     """Configure logging settings for the test session."""
-    logging.basicConfig(
-        level=logging.DEBUG,  # Change to DEBUG for detailed logs
-        format="%(asctime)s - %(levelname)s - %(message)s",
-        datefmt="%Y-%m-%d %H:%M:%S",
-        filename="test_log.log",  # Log file name
-        filemode="w"  # Overwrite log file for each session
-    )
-    console = logging.StreamHandler()
-    console.setLevel(logging.DEBUG)
-    formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
-    console.setFormatter(formatter)
-    logging.getLogger().addHandler(console)
+    logger = logging.getLogger()
+    logger.setLevel(logging.DEBUG)  # Change to DEBUG for detailed logs
+
+    # File handler
+    file_handler = logging.FileHandler("reports/log/test_log.log", mode="w")
+    file_handler.setLevel(logging.INFO)
+    file_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s", "%Y-%m-%d %H:%M:%S")
+    file_handler.setFormatter(file_formatter)
+    logger.addHandler(file_handler)
+
+    # Console handler
+    console_handler = logging.StreamHandler()
+    console_handler.setLevel(logging.INFO)
+    console_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+    console_handler.setFormatter(console_formatter)
+    logger.addHandler(console_handler)
