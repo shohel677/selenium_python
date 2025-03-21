@@ -1,27 +1,27 @@
-2025-03-22 00:29:30 - INFO - ##############################Test started: test_to_validate_login
-2025-03-22 00:29:33 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
-2025-03-22 00:29:35 - INFO - ##############################Test started: test_to_open_a_product
-2025-03-22 00:29:38 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
-2025-03-22 00:29:38 - INFO - Clicking element: Product button
-2025-03-22 00:29:38 - INFO - Checking visibility of element: Image in product details page
-2025-03-22 00:29:40 - INFO - ##############################Test started: test_to_add_a_product_in_cart
-2025-03-22 00:29:43 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
-2025-03-22 00:29:43 - INFO - Clicking element: Product button
-2025-03-22 00:29:43 - INFO - Checking visibility of element: Image in product details page
-2025-03-22 00:29:48 - INFO - Clicking element: Add to cart button in product page
-2025-03-22 00:29:48 - INFO - Checking visibility of element: Remove button in product page
-2025-03-22 00:29:48 - INFO - Get text for Cart icon : 1
-2025-03-22 00:29:50 - INFO - ##############################Test started: test_to_checkout_a_product
-2025-03-22 00:29:58 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
-2025-03-22 00:29:58 - INFO - Clicking element: Product button
-2025-03-22 00:29:58 - INFO - Checking visibility of element: Image in product details page
-2025-03-22 00:29:58 - INFO - Clicking element: Add to cart button in product page
-2025-03-22 00:29:58 - INFO - Checking visibility of element: Remove button in product page
-2025-03-22 00:29:58 - INFO - Get text for Cart icon : 1
-2025-03-22 00:29:58 - INFO - Clicking element: Cart icon
-2025-03-22 00:29:58 - INFO - Clicking element: Checkout button
-2025-03-22 00:29:58 - INFO - Checking presence of element: //input[@placeholder='First Name']
-2025-03-22 00:29:58 - INFO - Typing text on First name: Golzar
-2025-03-22 00:29:58 - INFO - Typing text on Last name: Shohel
-2025-03-22 00:29:58 - INFO - Typing text on Zip code: 1216
-2025-03-22 00:29:58 - INFO - Clicking element: Submit button
+2025-03-22 01:14:34 - INFO - ##############################Test started: test_to_validate_login
+2025-03-22 01:14:37 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
+2025-03-22 01:14:40 - INFO - ##############################Test started: test_to_open_a_product
+2025-03-22 01:14:42 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
+2025-03-22 01:14:42 - INFO - Clicking element: Product button
+2025-03-22 01:14:42 - INFO - Checking visibility of element: Image in product details page
+2025-03-22 01:14:45 - INFO - ##############################Test started: test_to_add_a_product_in_cart
+2025-03-22 01:14:47 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
+2025-03-22 01:14:47 - INFO - Clicking element: Product button
+2025-03-22 01:14:48 - INFO - Checking visibility of element: Image in product details page
+2025-03-22 01:14:52 - INFO - Clicking element: Add to cart button in product page
+2025-03-22 01:14:52 - INFO - Checking visibility of element: Remove button in product page
+2025-03-22 01:14:52 - INFO - Get text for Cart icon : 1
+2025-03-22 01:14:54 - INFO - ##############################Test started: test_to_checkout_a_product
+2025-03-22 01:14:57 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
+2025-03-22 01:14:57 - INFO - Clicking element: Product button
+2025-03-22 01:14:57 - INFO - Checking visibility of element: Image in product details page
+2025-03-22 01:14:57 - INFO - Clicking element: Add to cart button in product page
+2025-03-22 01:14:57 - INFO - Checking visibility of element: Remove button in product page
+2025-03-22 01:14:57 - INFO - Get text for Cart icon : 1
+2025-03-22 01:14:57 - INFO - Clicking element: Cart icon
+2025-03-22 01:14:57 - INFO - Clicking element: Checkout button
+2025-03-22 01:14:57 - INFO - Checking presence of element: //input[@placeholder='First Name']
+2025-03-22 01:14:57 - INFO - Typing text on First name: Golzar
+2025-03-22 01:14:57 - INFO - Typing text on Last name: Shohel
+2025-03-22 01:14:57 - INFO - Typing text on Zip code: 1216
+2025-03-22 01:14:57 - INFO - Clicking element: Submit button

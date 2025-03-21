@@ -16,8 +16,6 @@ def instance_driver(request):
 
     yield driver
 
-    print(" ")
-
     driver.quit()
 
 
