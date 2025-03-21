@@ -11,8 +11,8 @@ class AbstractComponent:
         self.logger = logging.getLogger(__name__)
         self.logger.setLevel(logging.INFO)  # Set log level (INFO, DEBUG, etc.)
 
-    def clickable_state_of_element(self, locator):
-        wait = WebDriverWait(self.driver, 10)
+    def clickable_state_of_element(self, locator, time_in_seconds: int = 10):
+        wait = WebDriverWait(self.driver, time_in_seconds)
         self.logger.info("Checking click ability of element: " + locator[1])
         return wait.until(expected_conditions.element_to_be_clickable(locator))
 
