@@ -1,21 +1,27 @@
-2025-03-18 10:27:00 - INFO - ##############################Test started: test_to_validate_login
-2025-03-18 10:27:05 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
-2025-03-18 10:27:05 - INFO - 
-2025-03-18 10:27:07 - INFO - ##############################Test started: test_to_open_a_product
-2025-03-18 10:27:10 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
-2025-03-18 10:27:10 - INFO - clicking element: Product button
-2025-03-18 10:27:10 - INFO - 
-2025-03-18 10:27:13 - INFO - ##############################Test started: test_to_add_a_product_in_cart
-2025-03-18 10:27:16 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
-2025-03-18 10:27:16 - INFO - clicking element: Product button
-2025-03-18 10:27:20 - INFO - 
-2025-03-18 10:27:22 - INFO - ##############################Test started: test_to_checkout_a_product
-2025-03-18 10:27:25 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
-2025-03-18 10:27:25 - INFO - clicking element: Product button
-2025-03-18 10:27:25 - INFO - clicking element: Checkout button
-2025-03-18 10:27:26 - INFO - Checking presence of element: //input[@placeholder='First Name']
-2025-03-18 10:27:26 - INFO - Typing text on First name: Golzar
-2025-03-18 10:27:26 - INFO - Typing text on Last name: Shohel
-2025-03-18 10:27:26 - INFO - Typing text on Zip code: 1216
-2025-03-18 10:27:26 - INFO - clicking element: Submit button
-2025-03-18 10:27:26 - INFO - 
+2025-03-22 00:29:30 - INFO - ##############################Test started: test_to_validate_login
+2025-03-22 00:29:33 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
+2025-03-22 00:29:35 - INFO - ##############################Test started: test_to_open_a_product
+2025-03-22 00:29:38 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
+2025-03-22 00:29:38 - INFO - Clicking element: Product button
+2025-03-22 00:29:38 - INFO - Checking visibility of element: Image in product details page
+2025-03-22 00:29:40 - INFO - ##############################Test started: test_to_add_a_product_in_cart
+2025-03-22 00:29:43 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
+2025-03-22 00:29:43 - INFO - Clicking element: Product button
+2025-03-22 00:29:43 - INFO - Checking visibility of element: Image in product details page
+2025-03-22 00:29:48 - INFO - Clicking element: Add to cart button in product page
+2025-03-22 00:29:48 - INFO - Checking visibility of element: Remove button in product page
+2025-03-22 00:29:48 - INFO - Get text for Cart icon : 1
+2025-03-22 00:29:50 - INFO - ##############################Test started: test_to_checkout_a_product
+2025-03-22 00:29:58 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
+2025-03-22 00:29:58 - INFO - Clicking element: Product button
+2025-03-22 00:29:58 - INFO - Checking visibility of element: Image in product details page
+2025-03-22 00:29:58 - INFO - Clicking element: Add to cart button in product page
+2025-03-22 00:29:58 - INFO - Checking visibility of element: Remove button in product page
+2025-03-22 00:29:58 - INFO - Get text for Cart icon : 1
+2025-03-22 00:29:58 - INFO - Clicking element: Cart icon
+2025-03-22 00:29:58 - INFO - Clicking element: Checkout button
+2025-03-22 00:29:58 - INFO - Checking presence of element: //input[@placeholder='First Name']
+2025-03-22 00:29:58 - INFO - Typing text on First name: Golzar
+2025-03-22 00:29:58 - INFO - Typing text on Last name: Shohel
+2025-03-22 00:29:58 - INFO - Typing text on Zip code: 1216
+2025-03-22 00:29:58 - INFO - Clicking element: Submit button

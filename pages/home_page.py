@@ -20,7 +20,5 @@ class HomePage(AbstractComponent):
         assert is_product_link is True, "Product link is not displayed. Login failed"
 
     def open_a_product(self):
-        # element = self.clickable_state_of_element(self.product)
-        # element.click()
         self.product_button.selenium_click()
         return self.product_page

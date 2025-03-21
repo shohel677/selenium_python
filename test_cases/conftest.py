@@ -1,7 +1,6 @@
 import logging
 
 import pytest
-from selenium import webdriver
 
 from abstract_components.driver_master import DriverMaster
 from pages.login_page import LoginPage
@@ -17,7 +16,7 @@ def instance_driver(request):
 
     yield driver
 
-    logging.info("")
+    print(" ")
 
     driver.quit()
 
@@ -73,7 +72,3 @@ def setup_logging():
     console_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
     console_handler.setFormatter(console_formatter)
     logger.addHandler(console_handler)
-
-
-def get_driver_instance():
-    return driver
