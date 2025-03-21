@@ -3,35 +3,20 @@ import logging
 import pytest
 from selenium import webdriver
 
+from abstract_components.driver_master import DriverMaster
 from pages.login_page import LoginPage
 
 
 @pytest.fixture(scope="function")
 def instance_driver(request):
     test_name = request.node.name  # Get the test method name
-    logging.info("##############################Test started: "+test_name)
+    logging.info("##############################Test started: " + test_name)
     browser_name = request.config.getoption("browser_name")
 
-    if "chrome" in browser_name:
-        options = webdriver.ChromeOptions()
-        if browser_name == "chromeheadless":
-            options.add_argument("--headless")
-            options.add_argument("--disable-gpu")
-            options.add_argument("--window-size=1920,1080")
-            driver = webdriver.Chrome(options=options)
-        else:
-            options.add_experimental_option("detach", True)
-            driver = webdriver.Chrome(options=options)
-    elif browser_name == "firefox":
-        driver = webdriver.Firefox()
-    elif browser_name == "edge":
-        driver = webdriver.Edge()
-    else:
-        raise ValueError(f"Unsupported browser: {browser_name}")
+    driver = DriverMaster.browser_init(browser_name)
 
     yield driver
 
-    logging.info("##############################Test ended: "+test_name)
     logging.info("")
 
     driver.quit()
@@ -88,3 +73,7 @@ def setup_logging():
     console_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
     console_handler.setFormatter(console_formatter)
     logger.addHandler(console_handler)
+
+
+def get_driver_instance():
+    return driver
