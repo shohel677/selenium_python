@@ -50,3 +50,11 @@ class TestSauceDemo:
         checkout_page.enter_zip_code()
         checkout_page.click_submit_button()
 
+    @pytest.mark.smoke
+    @pytest.mark.regression
+    def test_to_sort_product(self, setup, instance_driver):
+        AppElement(instance_driver)
+        home_page = HomePage(instance_driver)
+        home_page.is_home_page_open()
+        home_page.sort_product_by_price()
+

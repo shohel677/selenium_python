@@ -20,3 +20,6 @@ class AbstractComponent:
         wait = WebDriverWait(self.driver, time_in_seconds)
         self.logger.info("Checking presence of element: " + locator[1])
         return wait.until(expected_conditions.presence_of_element_located(locator))
+
+    def reload_page(self):
+        self.driver.refresh()

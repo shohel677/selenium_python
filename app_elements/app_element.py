@@ -14,8 +14,8 @@ class AppElement:
     def __init__(self, driver, element_or_locator=None, name: str = None):
         self.driver = driver
         self.name = name
-        self.element = None  # Ensure `self.element` exists
-        self.locator = None  # Ensure `self.locator` exists
+        self.element = None
+        self.locator = None
 
         if isinstance(element_or_locator, (WebElement, type(None))):
             self.element = element_or_locator
