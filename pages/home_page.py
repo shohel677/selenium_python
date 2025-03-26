@@ -25,7 +25,10 @@ class HomePage(AbstractComponent):
     def is_home_page_open(self):
         element = self.presence_of_element(self.product)
         is_product_link: bool = element.is_displayed()
-        AssertionLibrary.should_be_true(is_product_link is True, "Product page is displayed", "Product page is not displayed")
+        AssertionLibrary.should_be_true(is_product_link is True, "Successfully logged in",
+                                        "Login is not successful")
+        AssertionLibrary.should_be_true(is_product_link is True, "Product page is displayed",
+                                        "Product page is not displayed")
         ##assert is_product_link is True, "Product link is not displayed. Login failed"
 
     def open_a_product(self):
@@ -33,13 +36,14 @@ class HomePage(AbstractComponent):
         return self.product_page
 
     def sort_product_by_price(self):
+        AssertionLibrary.should_be_true(self.price_sort.is_shown(), "Product filter is displayed",
+                                        "Product filter is not displayed")
+
         """Sort products by price and handle stale element issues."""
         self.price_sort.select_option_by_value("za")
 
         # Ensure the dropdown is still shown after selection
         self.price_sort.is_shown()
-
-
 
         # Wait for the page to update instead of using time.sleep
         WebDriverWait(self.driver, 10).until(
@@ -50,7 +54,8 @@ class HomePage(AbstractComponent):
             try:
                 # Re-locate the dropdown element
                 dropdown_element = WebDriverWait(self.driver, 10).until(
-                    expected_conditions.visibility_of(self.price_sort.get_wrapped_element())  # Replace with actual dropdown ID
+                    expected_conditions.visibility_of(self.price_sort.get_wrapped_element())
+                    # Replace with actual dropdown ID
                 )
 
                 # Re-initialize the SelectHandler with the new dropdown element
@@ -58,7 +63,9 @@ class HomePage(AbstractComponent):
 
                 # Get the selected option
                 selected_option = self.price_sort.get_first_selected_option()
+
+                AssertionLibrary.should_be_true(selected_option == "Name (Z to A)", "Product sorting is working",
+                                                "Product sorting is not working")
                 break  # Exit loop if successful
             except StaleElementReferenceException:
                 print("Dropdown became stale. Retrying...")
-

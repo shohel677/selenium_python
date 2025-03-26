@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 
 from abstract_components.abstract_component import AbstractComponent
+from abstract_components.assertion_library import AssertionLibrary
 from app_elements.app_components.button import Button
 from app_elements.app_components.input import Input
 
@@ -16,10 +17,13 @@ class CheckoutPage(AbstractComponent):
         self.zip_code = Input(driver, (By.XPATH, "//input[@placeholder='Zip/Postal Code']"), "Zip code")
 
     def click_checkout_button(self):
+
         self.checkout_button.selenium_click()
 
     def enter_firstname(self):
         self.presence_of_element((By.XPATH, "//input[@placeholder='First Name']"))
+        AssertionLibrary.should_be_true(self.firstname.is_shown(), "Checkout page is displayed",
+                                        "Checkout page is not displayed")
         self.firstname.type("Golzar")
 
     def enter_lastname(self):
@@ -30,3 +34,5 @@ class CheckoutPage(AbstractComponent):
 
     def click_submit_button(self):
         self.submit_button.selenium_click()
+        AssertionLibrary.should_be_true(True, "Checkout form submit button is clicked",
+                                        "Checkout form submit button is not clicked")
