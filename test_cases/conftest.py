@@ -4,10 +4,12 @@ import re
 
 import pytest
 
+from abstract_components.assertion_library import AssertionLibrary
 from abstract_components.driver_master import DriverMaster
 from pages.login_page import LoginPage
 
 driver = None
+assertion_html = None
 
 
 @pytest.fixture(scope="function")
@@ -84,6 +86,8 @@ def pytest_runtest_makereport(item):
     Captures and embeds a screenshot in the HTML report for every test case,
     and adds a custom full-width text banner in the report.
     """
+
+    global assertion_html
     pytest_html = item.config.pluginmanager.getplugin("html")
     outcome = yield
     report = outcome.get_result()
@@ -112,6 +116,26 @@ def pytest_runtest_makereport(item):
     if pytest_html:
         extra.append(pytest_html.extras.html(banner_html))
 
+    for assertion in AssertionLibrary.get_all_assertions():
+        if assertion.get_status():
+            assertion_html = f"""
+                     <div style="width: 100%; padding: 10px; background-color: #ffffff; color: white;
+                                 text-align: left; font-size: 13px; font-weight: bold; color:black;  border-radius: 5px; margin-bottom: 10px;">
+                         Pass: {assertion.get_message()}
+                     </div>
+                 """
+        else:
+            assertion_html = f"""
+                                 <div style="width: 100%; padding: 10px; background-color: #ffffff; color: white;
+                                             text-align: left; font-size: 13px; font-weight: bold; color:red;  border-radius: 5px; margin-bottom: 10px;">
+                                     Fail : {assertion.get_message()}
+                                 </div>
+                             """
+
+        # Ensure pytest-html plugin is available
+        if pytest_html:
+            extra.append(pytest_html.extras.html(assertion_html))
+
     # Run this for all test phases (setup, call, teardown)
     if report.when in ["setup", "call", "teardown"]:
         reports_dir = os.path.join(os.getcwd(), "reports/screenshots")
@@ -130,6 +154,7 @@ def pytest_runtest_makereport(item):
             extra.append(pytest_html.extras.html(html))
 
     report.extras = extra
+    AssertionLibrary.get_all_assertions().clear()
     # 🔴 Close WebDriver after reporting is complete
     get_driver = getattr(item, "_driver_for_report", None)
     if get_driver:

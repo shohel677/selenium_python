@@ -6,6 +6,7 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
 from abstract_components.abstract_component import AbstractComponent
+from abstract_components.assertion_library import AssertionLibrary
 from app_elements.app_components.label import Label
 from app_elements.app_components.select_dropdown import SelectDropdown
 from pages.product_page import ProductPage
@@ -24,7 +25,8 @@ class HomePage(AbstractComponent):
     def is_home_page_open(self):
         element = self.presence_of_element(self.product)
         is_product_link: bool = element.is_displayed()
-        assert is_product_link is True, "Product link is not displayed. Login failed"
+        AssertionLibrary.should_be_true(is_product_link is True, "Product page is displayed", "Product page is not displayed")
+        ##assert is_product_link is True, "Product link is not displayed. Login failed"
 
     def open_a_product(self):
         self.product_button.selenium_click()
@@ -36,6 +38,8 @@ class HomePage(AbstractComponent):
 
         # Ensure the dropdown is still shown after selection
         self.price_sort.is_shown()
+
+
 
         # Wait for the page to update instead of using time.sleep
         WebDriverWait(self.driver, 10).until(

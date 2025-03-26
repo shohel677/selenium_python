@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 
 from abstract_components.abstract_component import AbstractComponent
+from abstract_components.assertion_library import AssertionLibrary
 from app_elements.app_components.button import Button
 from app_elements.app_components.image import Image
 from pages.checkout_page import CheckoutPage
@@ -20,15 +21,20 @@ class ProductPage(AbstractComponent):
 
     def product_details_page_displayed(self):
         is_product_details_page: bool = self.product_details_img.is_shown()
-        assert is_product_details_page, "Product details page is not displayed"
+        # assert is_product_details_page, "Product details page is not displayed"
+        AssertionLibrary.should_be_true(is_product_details_page, "Product details page is displayed",
+                                        "Product details page is not displayed")
 
     def click_add_to_cart(self):
         self.add_to_cart_button.selenium_click()
-        self.remove_button.is_shown()
+        rmv_button = self.remove_button.is_shown()
+        AssertionLibrary.should_be_true(rmv_button, "Add to cart button is clicked and remove button displaye",
+                                        "Remove button is not displayed")
 
     def product_added_to_cart(self):
         added_number = self.cart_icon.get_text()
-        assert added_number == "1", "Product is not added in cart"
+        # assert added_number == "1", "Product is not added in cart"
+        AssertionLibrary.should_be_true(added_number == "2", "Product added in cart", "Product is not added in cart")
 
     def go_to_checkout_page(self):
         self.cart_icon.selenium_click()
