@@ -28,7 +28,7 @@ class ProductPage(AbstractComponent):
 
     def product_added_to_cart(self):
         added_number = self.cart_icon.get_text()
-        assert added_number == "2", "Product is not added in cart"
+        assert added_number == "1", "Product is not added in cart"
 
     def go_to_checkout_page(self):
         self.cart_icon.selenium_click()
