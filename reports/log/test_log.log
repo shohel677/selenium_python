@@ -1,5 +1,0 @@
-2025-03-23 12:44:34 - INFO - ##############################Test started: test_to_sort_product
-2025-03-23 12:44:37 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
-2025-03-23 12:44:37 - INFO - Selecting option by value: za
-2025-03-23 12:44:37 - INFO - Checking visibility of element: Price sorting
-2025-03-23 12:44:37 - INFO - First selected option: Name (Z to A)
