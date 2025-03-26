@@ -160,7 +160,7 @@ def pytest_runtest_makereport(item):
     if get_driver:
         try:
             get_driver.quit()
-            logging.info("WebDriver closed successfully.")
+            logging.info("Driver closed successfully.")
         except Exception as e:
             logging.error(f"Error while closing WebDriver: {e}")
 
@@ -178,4 +178,4 @@ def _capture_screenshot(file_name, item):
         except Exception as e:
             logging.error(f"Failed to capture screenshot: {e}")
     else:
-        logging.warning("WebDriver instance is not available for capturing screenshot.")
+        logging.warning("Driver instance is not available for capturing screenshot.")

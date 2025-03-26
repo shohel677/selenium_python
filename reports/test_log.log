@@ -1,57 +1,75 @@
-2025-03-26 23:03:08 - INFO - ##############################Test started: test_to_validate_login
-2025-03-26 23:03:11 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_validate_login.png
-2025-03-26 23:03:11 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
-2025-03-26 23:03:11 - CRITICAL - Pass: Product page is displayed
-2025-03-26 23:03:11 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_validate_login.png
-2025-03-26 23:03:11 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_validate_login.png
-2025-03-26 23:03:14 - INFO - WebDriver closed successfully.
-2025-03-26 23:03:14 - INFO - ##############################Test started: test_to_open_a_product
-2025-03-26 23:03:17 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_open_a_product.png
-2025-03-26 23:03:17 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
-2025-03-26 23:03:17 - CRITICAL - Pass: Product page is displayed
-2025-03-26 23:03:17 - INFO - Clicking element: Product button
-2025-03-26 23:03:17 - INFO - Checking visibility of element: Image in product details page
-2025-03-26 23:03:17 - CRITICAL - Pass: Product details page is displayed
-2025-03-26 23:03:17 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_open_a_product.png
-2025-03-26 23:03:17 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_open_a_product.png
-2025-03-26 23:03:19 - INFO - WebDriver closed successfully.
-2025-03-26 23:03:19 - INFO - ##############################Test started: test_to_add_a_product_in_cart
-2025-03-26 23:03:22 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_add_a_product_in_cart.png
-2025-03-26 23:03:22 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
-2025-03-26 23:03:22 - CRITICAL - Pass: Product page is displayed
-2025-03-26 23:03:22 - INFO - Clicking element: Product button
-2025-03-26 23:03:22 - INFO - Checking visibility of element: Image in product details page
-2025-03-26 23:03:22 - CRITICAL - Pass: Product details page is displayed
-2025-03-26 23:03:22 - INFO - Clicking element: Add to cart button in product page
-2025-03-26 23:03:23 - INFO - Checking visibility of element: Remove button in product page
-2025-03-26 23:03:23 - CRITICAL - Pass: Add to cart button is clicked and remove button displaye
-2025-03-26 23:03:23 - INFO - Get text for Cart icon : 1
-2025-03-26 23:03:23 - CRITICAL - Fail: Product is not added in cart
-2025-03-26 23:03:23 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_add_a_product_in_cart.png
-2025-03-26 23:03:23 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_add_a_product_in_cart.png
-2025-03-26 23:03:25 - INFO - WebDriver closed successfully.
-2025-03-26 23:03:25 - INFO - ##############################Test started: test_to_checkout_a_product
-2025-03-26 23:03:28 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_checkout_a_product.png
-2025-03-26 23:03:28 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
-2025-03-26 23:03:28 - CRITICAL - Pass: Product page is displayed
-2025-03-26 23:03:28 - INFO - Clicking element: Product button
-2025-03-26 23:03:28 - INFO - Checking visibility of element: Image in product details page
-2025-03-26 23:03:28 - CRITICAL - Pass: Product details page is displayed
-2025-03-26 23:03:28 - INFO - Clicking element: Add to cart button in product page
-2025-03-26 23:03:28 - INFO - Checking visibility of element: Remove button in product page
-2025-03-26 23:03:28 - CRITICAL - Pass: Add to cart button is clicked and remove button displaye
-2025-03-26 23:03:29 - INFO - Get text for Cart icon : 1
-2025-03-26 23:03:29 - CRITICAL - Fail: Product is not added in cart
-2025-03-26 23:03:29 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_checkout_a_product.png
-2025-03-26 23:03:29 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_checkout_a_product.png
-2025-03-26 23:03:31 - INFO - WebDriver closed successfully.
-2025-03-26 23:03:31 - INFO - ##############################Test started: test_to_sort_product
-2025-03-26 23:03:35 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_sort_product.png
-2025-03-26 23:03:35 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
-2025-03-26 23:03:35 - CRITICAL - Pass: Product page is displayed
-2025-03-26 23:03:35 - INFO - Selecting option by value: za
-2025-03-26 23:03:35 - INFO - Checking visibility of element: Price sorting
-2025-03-26 23:03:35 - INFO - First selected option: Name (Z to A)
-2025-03-26 23:03:35 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_sort_product.png
-2025-03-26 23:03:35 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_sort_product.png
-2025-03-26 23:03:37 - INFO - WebDriver closed successfully.
+2025-03-26 23:39:35 - INFO - ##############################Test started: test_to_validate_login
+2025-03-26 23:39:38 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_validate_login.png
+2025-03-26 23:39:38 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
+2025-03-26 23:39:38 - CRITICAL - Pass: Successfully logged in
+2025-03-26 23:39:38 - CRITICAL - Pass: Product page is displayed
+2025-03-26 23:39:38 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_validate_login.png
+2025-03-26 23:39:38 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_validate_login.png
+2025-03-26 23:39:41 - INFO - WebDriver closed successfully.
+2025-03-26 23:39:41 - INFO - ##############################Test started: test_to_open_a_product
+2025-03-26 23:39:44 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_open_a_product.png
+2025-03-26 23:39:44 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
+2025-03-26 23:39:44 - CRITICAL - Pass: Successfully logged in
+2025-03-26 23:39:44 - CRITICAL - Pass: Product page is displayed
+2025-03-26 23:39:44 - INFO - Clicking element: Product button
+2025-03-26 23:39:44 - INFO - Checking visibility of element: Image in product details page
+2025-03-26 23:39:44 - CRITICAL - Pass: Product details page is displayed
+2025-03-26 23:39:44 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_open_a_product.png
+2025-03-26 23:39:44 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_open_a_product.png
+2025-03-26 23:39:47 - INFO - WebDriver closed successfully.
+2025-03-26 23:39:47 - INFO - ##############################Test started: test_to_add_a_product_in_cart
+2025-03-26 23:39:50 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_add_a_product_in_cart.png
+2025-03-26 23:39:50 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
+2025-03-26 23:39:50 - CRITICAL - Pass: Successfully logged in
+2025-03-26 23:39:50 - CRITICAL - Pass: Product page is displayed
+2025-03-26 23:39:50 - INFO - Clicking element: Product button
+2025-03-26 23:39:50 - INFO - Checking visibility of element: Image in product details page
+2025-03-26 23:39:50 - CRITICAL - Pass: Product details page is displayed
+2025-03-26 23:39:50 - INFO - Clicking element: Add to cart button in product page
+2025-03-26 23:39:50 - INFO - Checking visibility of element: Remove button in product page
+2025-03-26 23:39:50 - CRITICAL - Pass: Add to cart button is clicked and remove button displaye
+2025-03-26 23:39:50 - INFO - Get text for Cart icon : 1
+2025-03-26 23:39:50 - CRITICAL - Pass: Product added in cart
+2025-03-26 23:39:50 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_add_a_product_in_cart.png
+2025-03-26 23:39:50 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_add_a_product_in_cart.png
+2025-03-26 23:39:52 - INFO - WebDriver closed successfully.
+2025-03-26 23:39:52 - INFO - ##############################Test started: test_to_checkout_a_product
+2025-03-26 23:39:56 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_checkout_a_product.png
+2025-03-26 23:39:56 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
+2025-03-26 23:39:56 - CRITICAL - Pass: Successfully logged in
+2025-03-26 23:39:56 - CRITICAL - Pass: Product page is displayed
+2025-03-26 23:39:56 - INFO - Clicking element: Product button
+2025-03-26 23:39:56 - INFO - Checking visibility of element: Image in product details page
+2025-03-26 23:39:56 - CRITICAL - Pass: Product details page is displayed
+2025-03-26 23:39:56 - INFO - Clicking element: Add to cart button in product page
+2025-03-26 23:39:56 - INFO - Checking visibility of element: Remove button in product page
+2025-03-26 23:39:56 - CRITICAL - Pass: Add to cart button is clicked and remove button displaye
+2025-03-26 23:39:56 - INFO - Get text for Cart icon : 1
+2025-03-26 23:39:56 - CRITICAL - Pass: Product added in cart
+2025-03-26 23:39:56 - INFO - Clicking element: Cart icon
+2025-03-26 23:39:56 - INFO - Clicking element: Checkout button
+2025-03-26 23:39:56 - INFO - Checking presence of element: //input[@placeholder='First Name']
+2025-03-26 23:39:56 - INFO - Checking visibility of element: First name
+2025-03-26 23:39:56 - CRITICAL - Pass: Checkout page is displayed
+2025-03-26 23:39:56 - INFO - Typing text on First name: Golzar
+2025-03-26 23:39:56 - INFO - Typing text on Last name: Shohel
+2025-03-26 23:39:56 - INFO - Typing text on Zip code: 1216
+2025-03-26 23:39:56 - INFO - Clicking element: Submit button
+2025-03-26 23:39:56 - CRITICAL - Pass: Checkout form submit button is clicked
+2025-03-26 23:39:56 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_checkout_a_product.png
+2025-03-26 23:39:57 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_checkout_a_product.png
+2025-03-26 23:39:59 - INFO - WebDriver closed successfully.
+2025-03-26 23:39:59 - INFO - ##############################Test started: test_to_sort_product
+2025-03-26 23:40:02 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_sort_product.png
+2025-03-26 23:40:02 - INFO - Checking presence of element: //div[text()='Sauce Labs Backpack']/parent::a
+2025-03-26 23:40:02 - CRITICAL - Pass: Successfully logged in
+2025-03-26 23:40:02 - CRITICAL - Pass: Product page is displayed
+2025-03-26 23:40:02 - INFO - Checking visibility of element: Price sorting
+2025-03-26 23:40:02 - CRITICAL - Pass: Product filter is displayed
+2025-03-26 23:40:02 - INFO - Selecting option by value: za
+2025-03-26 23:40:02 - INFO - Checking visibility of element: Price sorting
+2025-03-26 23:40:02 - INFO - First selected option: Name (Z to A)
+2025-03-26 23:40:02 - CRITICAL - Pass: Product sorting is working
+2025-03-26 23:40:02 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_sort_product.png
+2025-03-26 23:40:02 - INFO - Screenshot saved: C:\Users\STL\PycharmProjects\TestFrameworkPython\reports/screenshots\test_cases_test_sauce_demo_py_TestSauceDemo_test_to_sort_product.png
+2025-03-26 23:40:05 - INFO - WebDriver closed successfully.
